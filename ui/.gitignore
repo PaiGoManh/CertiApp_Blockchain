@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+SCdata/Cert.json
+SCdata/deployed_address
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
