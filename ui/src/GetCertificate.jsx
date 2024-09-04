@@ -1,73 +1,35 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { BrowserProvider, Contract } from 'ethers';
-import { abi } from './SCdata/Cert.json';
-import { certModuleCert } from './SCdata/deployed_addresses.json';
+import React from 'react'
+import { useLocation } from 'react-router-dom';
+import img from './assets/KBA_logo.png'
 
 const GetCertificate = () => {
-  const provider = new BrowserProvider(window.ethereum);
-  const [certId, setCertId] = useState('');
-  const [certificateDetails, setCertificateDetails] = useState([]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-      const signer = await provider.getSigner();
-      const instance = new Contract(certModuleCert, abi, provider);
-      const certificate = await instance.Certificates(certId);
-      console.log("a",certificate);
-
-      const certDetails = {
-        course: certificate[0],         
-        candidateName: certificate[1],  
-        grade: certificate[2],          
-        issueDate: certificate[3],
-      };
-      setCertificateDetails(certDetails);
-  };
-
+  const location = useLocation();
+  const certDetails = location.state?.certDetails;
   return (
     <>
-      <div className='mt-10 ml-[80%]'>
-        <Link to="/" className=" bg-[orange] text-black w-[200px] h-10 p-2 pl-3 cursor-pointer">
-          Issue New Certificate
-        </Link>
-      </div>
-      <div className="flex flex-col items-center mt-10">
-        <h3 className="text-center text-3xl font-bold mb-4">Get Issued Certificate</h3>
-        <form className="w-1/2" onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block mb-2" htmlFor="certificateID">Enter Certificate ID *</label>
-            <input
-              type="text"
-              className="border-2 border-black w-full p-2"
-              id="certificateID"
-              name="certificateID"
-              placeholder="Enter Certificate ID"
-              value={certId}
-              onChange={(e) => setCertId(e.target.value)}
-              required
-            />
+    {certDetails && (
+      <div className='w-[90%] h-[550px] mx-10 my-10 border-[25px] border-[blue]'>
+        <div className='text-center'>
+          <div className='flex items-center ml-[5%]'>
+            <div className=''>
+              <img src={img} alt='kba_logo'/>
+            </div>
+            <div className='ml-[20%]'>
+              <h1 className='mt-5 text-4xl text-[blue] font-extrabold'>KERALA BLOCKCHAIN ACADEMY</h1>
+              <h1 className='mt-5 text-3xl text-[blue] font-bold '>CERTIFICATE OF COMPLETION</h1>
+              <hr className='mt-5 h-0.5 bg-[blue] border-0'/>
+            </div>
           </div>
-          <button
-            className="border-2 bg-[orange] text-black px-4 py-2"
-            type="submit"
-          >
-            Get Certificate
-          </button>
-        </form>
-
-        {certificateDetails && (
-          <div className="mt-10 border-2 p-6 rounded shadow-lg w-1/2">
-            <h4 className="text-2xl font-bold mb-4">Certificate Details</h4>
-            <p><strong>Course:</strong> {certificateDetails.course}</p>
-            <p><strong>Candidate Name:</strong> {certificateDetails.candidateName}</p>
-            <p><strong>Grade:</strong> {certificateDetails.grade}</p>
-            <p><strong>Issue Date:</strong> {certificateDetails.issueDate}</p>
+          <div className='mt-[10%] text-2xl text-blue-800'>
+            <div className='mt-2'>This is to certify that <span className='ml-1 mr-1 text-[blue] font-bold'>{certDetails.candidateName}</span></div>
+            <div className='mt-2'>has successfully completed <span className='ml-1 mr-1 text-[blue] font-bold'>{certDetails.course}</span></div>
+            <div className='mt-2'>with<span className='ml-1 mr-1 text-[blue] font-bold'>{certDetails.grade}</span>Grade on <span className='ml-1 mr-1 text-[blue] font-bold'>{certDetails.issueDate}</span></div>
           </div>
-        )}
+        </div>
       </div>
+      )}
     </>
-  );
-};
+  )
+}
 
-export default GetCertificate;
+export default GetCertificate
