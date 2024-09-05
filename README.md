@@ -8,7 +8,7 @@ The DApp is designed to allow educational institutions or other organizations to
 
 ## 🛠️ Built With
 
-   <img src="https://skillicons.dev/icons?i=vscode,react,tailwind,nodejs,solidity,"/>
+   <img src="https://skillicons.dev/icons?i=vscode,react,tailwind,nodejs,solidity,metamask"/>
 
 ## 📢 Prerequisites
 
