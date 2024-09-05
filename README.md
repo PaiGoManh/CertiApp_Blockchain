@@ -19,7 +19,13 @@ The DApp is designed to allow educational institutions or other organizations to
 
 Clone the Project and change into the directory
 
+```
 git clone https://github.com/Kerala-Blockchain-Academy/light-explorer
 cd light-explorer
+```
 
 Install dependencies
+
+```
+npm install
+```
