@@ -20,8 +20,8 @@ The DApp is designed to allow educational institutions or other organizations to
 Clone the Project and change into the directory
 
 ```
-git clone https://github.com/Kerala-Blockchain-Academy/light-explorer
-cd light-explorer
+https://github.com/PaiGoManh/Certificate-DApp_Blockchain.git
+cd Certificate-DApp_Blockchain
 ```
 
 Install dependencies
@@ -29,3 +29,33 @@ Install dependencies
 ```
 npm install
 ```
+```
+npx hardhat node
+```
+open another terminal in vscode(ctrl+shift+`)
+
+```
+npx hardhat ignition deploy ignition/modules/Cert.js
+```
+
+open your frontend , go to your directory
+```
+npm run dev
+```
+
+## 📦 Planned Updates
+
+Improved UI/UX.
+MetaMask integration for certificate verification.
+Compatibility with mobile devices.
+Desktop application for certificate management.
+
+## 🎗️ Contributing
+
+Contributions are welcome! Feel free to fork the project and submit a pull request. Make sure to follow the steps below:
+
+1. Fork the Project.
+2. Create a Feature Branch (git checkout -b feature/<feature_name>).
+3. Commit your changes (git commit -m 'Add <feature_name>').
+4. Push to the branch (git push origin feature/<feature_name>).
+5. Open a Pull Request.
