@@ -67,6 +67,7 @@ open another terminal in vscode(ctrl+shift+`)
 
 ```
 cd ui
+npm i 
 ```
 Go to folder src/SCdata
 
