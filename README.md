@@ -14,11 +14,12 @@ The DApp is designed to allow educational institutions or other organizations to
 
 - **Node.js**: Ensure you have Node.js installed (v16.x recommended).
 - **Metamask**: A browser extension to interact with Ethereum-based applications.
-- **EVM-compatible Blockchain**: The smart contract should be deployed to an Ethereum-compatible network.
 
 ## ⚙️ Run Locally
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/certificate-dapp.git
-   cd certificate-dapp
+Clone the Project and change into the directory
+
+git clone https://github.com/Kerala-Blockchain-Academy/light-explorer
+cd light-explorer
+
+Install dependencies
