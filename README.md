@@ -62,11 +62,18 @@ open another terminal in vscode(ctrl+shift+`)
 
 ```
 npx hardhat ignition deploy ignition/modules/Cert.js
-```
+``` 
 open another terminal in vscode(ctrl+shift+`)
 
 ```
 cd ui
+```
+Go to folder src/SCdata
+
+- add Abi code to cert.json file
+- add deployed address to deployedaddress.json(deployed address will get after deploying the contract)
+  
+```
 npm run dev
 ```
 - connect your metamask
