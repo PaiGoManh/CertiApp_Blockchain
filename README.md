@@ -8,10 +8,7 @@ The DApp is designed to allow educational institutions or other organizations to
 
 ## 🛠️ Built With
 
-- **React.js**: Frontend framework used to build the user interface.
-- **Ethereum Smart Contracts**: The certificate data is stored on the Ethereum blockchain.
-- **Ethers.js**: A lightweight library used to interact with the Ethereum blockchain.
-- **Tailwind CSS**: For modern and responsive UI styling.
+   <img src="https://skillicons.dev/icons?i=html,css,python,c,js,tailwind,mysql,mongodb"/>
 
 ## 📢 Prerequisites
 
