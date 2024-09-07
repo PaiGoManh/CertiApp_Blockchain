@@ -99,3 +99,6 @@ Contributions are welcome! Feel free to fork the project and submit a pull reque
 3. Commit your changes (git commit -m 'Add <feature_name>').
 4. Push to the branch (git push origin feature/<feature_name>).
 5. Open a Pull Request.
+
+###Demo 
+<img src="https://github.com/PaiGoManh/Certificate-DApp_Blockchain/blob/main/thumbnail.png" width={400} height={300}>
