@@ -100,5 +100,5 @@ Contributions are welcome! Feel free to fork the project and submit a pull reque
 4. Push to the branch (git push origin feature/<feature_name>).
 5. Open a Pull Request.
 
-###Demo 
-<img src="https://github.com/PaiGoManh/Certificate-DApp_Blockchain/blob/main/thumbnail.png" width={400} height={300}>
+## Demo 
+<img src="https://github.com/PaiGoManh/Certificate-DApp_Blockchain/blob/main/thumbnail.png" width="300" height="300">
