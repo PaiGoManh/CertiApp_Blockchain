@@ -105,3 +105,8 @@ Contributions are welcome! Feel free to fork the project and submit a pull reque
 <a href="https://youtu.be/67bsmRE0fdE?si=BUilx-31RPA7IwWI">
    <img src="https://github.com/PaiGoManh/Certificate-DApp_Blockchain/blob/main/thumbnail.png" width="500" height="300">
 </a>
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
